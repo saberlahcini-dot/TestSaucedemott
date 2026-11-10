@@ -1,0 +1,16 @@
+{
+  "name": "saucedemo-playwright-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SauceDemo end-to-end tests with Playwright, POM, and GitHub Actions",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report:telegram": "node scripts/send-telegram-report.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "dotenv": "^18.0.10"
+  }
+}
